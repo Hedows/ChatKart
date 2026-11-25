@@ -1,12 +1,12 @@
 # ChatKart – Click to Chat Button & Cart Checkout for WooCommerce
-**Contributors:**  hedows
-**Tags:**  whatsapp, woocommerce, click to chat, chat button, order
-**Requires at least:**  5.8
-**Tested up to:**  7.1
-**Requires PHP:**  7.4
-**Stable tag:**  1.0.0
-**License:**  GPLv2 or later
-**License URI:**  https://www.gnu.org/licenses/gpl-2.0.html
+**Contributors:**  hedows </br>
+**Tags:**  whatsapp, woocommerce, click to chat, chat button, order </br>
+**Requires at least:**  5.8 </br>
+**Tested up to:**  7.1 </br>
+**Requires PHP:**  7.4 </br>
+**Stable tag:**  1.0.0 </br>
+**License:**  GPLv2 or later </br>
+**License URI:**  https://www.gnu.org/licenses/gpl-2.0.html </br>
 
 Add a floating WhatsApp chat button to your site and let WooCommerce customers order, share and check out their cart on WhatsApp.
 
