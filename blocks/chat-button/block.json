@@ -1,0 +1,19 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "chatkart/chat-button",
+	"title": "WhatsApp Chat Button",
+	"category": "widgets",
+	"icon": "format-chat",
+	"description": "A button that opens a WhatsApp chat.",
+	"keywords": [ "whatsapp", "chat", "button", "contact" ],
+	"textdomain": "chatkart-click-to-chat-button-cart-checkout-for-woocommerce",
+	"attributes": {
+		"text": { "type": "string", "default": "" },
+		"phone": { "type": "string", "default": "" },
+		"message": { "type": "string", "default": "" },
+		"showIcon": { "type": "boolean", "default": true }
+	},
+	"supports": { "html": false, "align": true, "spacing": { "margin": true } },
+	"editorScript": "file:./editor.js"
+}

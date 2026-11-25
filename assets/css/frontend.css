@@ -1,0 +1,85 @@
+/* ---------- Buttons ---------- */
+.chatkart-wrap{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+.chatkart-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 18px;border:0;cursor:pointer;font:inherit;font-weight:600;line-height:1.2;text-decoration:none;transition:filter .15s}
+.chatkart-order-btn,.chatkart-submit,.chatkart-open-wa{background:var(--chatkart-bg,#25D366);color:var(--chatkart-color,#fff);border-radius:var(--chatkart-radius,8px)}
+.chatkart-share-btn{background:var(--chatkart-sbg,#128C7E);color:var(--chatkart-scolor,#fff);border-radius:var(--chatkart-sradius,8px)}
+.chatkart-btn:hover,.chatkart-btn:focus{filter:brightness(.92)}
+.chatkart-order-btn:hover,.chatkart-order-btn:focus,.chatkart-submit:hover,.chatkart-open-wa:hover{color:var(--chatkart-color,#fff)}
+.chatkart-share-btn:hover,.chatkart-share-btn:focus{color:var(--chatkart-scolor,#fff)}
+.chatkart-btn:focus-visible{outline:3px solid #1d2327;outline-offset:2px}
+.chatkart-btn[disabled]{opacity:.6;cursor:wait}
+.chatkart-icon{flex:none}
+.chatkart-notice{flex-basis:100%;color:#b32d2e;font-size:.9em}
+.chatkart-notice:empty{display:none}
+.chatkart-ctx-shop .chatkart-btn{padding:9px 12px;font-size:.9em}
+.chatkart-ctx-cart,.chatkart-ctx-checkout{margin-top:12px}
+.chatkart-ctx-cart .chatkart-order-btn{width:100%}
+.chatkart-hide-atc .add_to_cart_button,.chatkart-hide-atc .single_add_to_cart_button,.chatkart-hide-atc .ajax_add_to_cart{display:none!important}
+@media (min-width:783px){.chatkart-hide-desktop{display:none!important}}
+
+/* ---------- Checkout disabled (block themes) ---------- */
+.chatkart-no-checkout .wc-block-cart__submit-container,.chatkart-no-checkout .wp-block-woocommerce-proceed-to-checkout-block,.chatkart-no-checkout .wc-block-mini-cart__footer-checkout,.chatkart-no-checkout .wp-block-woocommerce-mini-cart-checkout-button-block,.chatkart-no-checkout .wc-proceed-to-checkout a.checkout-button{display:none!important}
+
+/* ---------- Floating cart ---------- */
+.chatkart-count{position:absolute;top:-4px;right:-4px;min-width:22px;height:22px;padding:0 5px;border-radius:11px;background:#d63638;color:#fff;font:700 12px/22px system-ui,sans-serif;text-align:center;box-sizing:border-box}
+.chatkart-count[hidden]{display:none}
+
+/* ---------- Popup base ---------- */
+.chatkart-modal[hidden]{display:none}
+.chatkart-modal{position:fixed;inset:0;z-index:999999;display:flex;align-items:center;justify-content:center;padding:16px}
+.chatkart-overlay{position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.chatkart-dialog{position:relative;background:#fff;color:#1d2327;width:100%;max-width:440px;max-height:calc(100vh - 32px);overflow:auto;border-radius:12px;padding:24px;box-shadow:0 12px 40px rgba(0,0,0,.35);box-sizing:border-box;animation:chatkart-pop .2s ease-out}
+.chatkart-dialog h3{margin:0 40px 6px 0;font-size:1.25rem;color:inherit}
+.chatkart-summary{margin:0 0 12px;color:#50575e;font-size:.95em}
+.chatkart-summary:empty{display:none}
+.chatkart-x{position:absolute;top:10px;right:12px;width:36px;height:36px;border:0;background:none;font-size:28px;line-height:1;cursor:pointer;color:inherit;opacity:.7}
+.chatkart-form label{display:block;margin:10px 0 4px;font-weight:600;font-size:.9em;color:inherit}
+.chatkart-form input,.chatkart-form textarea{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid #c3c4c7;border-radius:6px;font:inherit;background:#fff;color:#1d2327}
+.chatkart-form input:focus,.chatkart-form textarea:focus{border-color:#2271b1;outline:2px solid #2271b1;outline-offset:0}
+.chatkart-form[hidden]{display:none}
+.chatkart-hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.chatkart-error{color:#b32d2e;min-height:1.2em;margin:10px 0 4px;font-size:.9em}
+.chatkart-submit,.chatkart-open-wa{width:100%;margin-top:6px}
+.chatkart-done{text-align:center}.chatkart-done[hidden]{display:none}
+body.chatkart-open{overflow:hidden}
+
+/* ---------- Cart list inside popup ---------- */
+.chatkart-cart[hidden]{display:none}
+.chatkart-cart-list{list-style:none;margin:0 0 8px;padding:0}
+.chatkart-cart-item{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid rgba(128,128,128,.3)}
+.chatkart-ci-name{flex:1;min-width:0;font-weight:600}
+.chatkart-ci-name small{display:block;font-weight:400;opacity:.75}
+.chatkart-qty{display:inline-flex;align-items:center;gap:6px}
+.chatkart-qty button,.chatkart-ci-rm{width:28px;height:28px;border:1px solid rgba(128,128,128,.5);border-radius:6px;background:transparent;color:inherit;cursor:pointer;font:inherit;line-height:1;padding:0}
+.chatkart-ci-rm{border-color:transparent;color:#d63638;font-size:18px}
+.chatkart-ci-price{white-space:nowrap;min-width:64px;text-align:right}
+.chatkart-cart-total{text-align:right;font-weight:700;margin:6px 0 4px}
+.chatkart-cart-empty{padding:12px 0;opacity:.8}
+
+/* ---------- Templates ---------- */
+@keyframes chatkart-pop{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes chatkart-in-up{from{transform:translateY(100%)}to{transform:none}}
+
+/* 2 / 3 drawers */
+/* 4 bottom sheet */
+.chatkart-tpl-bottom-sheet{padding:0;align-items:flex-end}
+.chatkart-tpl-bottom-sheet .chatkart-dialog{max-width:600px;border-radius:18px 18px 0 0;animation:chatkart-in-up .25s ease-out}
+/* 5 fullscreen */
+/* 6 dark */
+.chatkart-tpl-dark .chatkart-dialog{background:#1d2327;color:#f0f0f1}
+.chatkart-tpl-dark .chatkart-summary{color:#a7aaad}
+.chatkart-tpl-dark .chatkart-form input,.chatkart-tpl-dark .chatkart-form textarea{background:#2c3338;border-color:#50575e;color:#f0f0f1}
+/* 7 whatsapp header */
+/* 8 compact corner */
+/* 9 glass */
+/* 10 minimal */
+/* custom: plain white card, admin CSS overrides */
+
+@media (prefers-reduced-motion:reduce){.chatkart-dialog{animation:none!important}.chatkart-btn{transition:none}}
+
+/* ---------- v2.1: RTL, stock-alert form, checkout consent ---------- */
+.rtl .chatkart-x{right:auto;left:12px}
+.rtl .chatkart-dialog h3{margin:0 0 6px 40px}
+.rtl .chatkart-ci-price{text-align:left}.rtl .chatkart-cart-total{text-align:left}
+.chatkart-wa-thanks{margin:18px 0;padding:18px;border:2px solid #25D366;border-radius:12px;text-align:center}
+.chatkart-wa-thanks .chatkart-btn{display:inline-flex}
