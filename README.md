@@ -1,12 +1,12 @@
 # ChatKart – Click to Chat Button & Cart Checkout for WooCommerce
-** Contributors:**  hedows
-** Tags:**  whatsapp, woocommerce, click to chat, chat button, order
-** Requires at least:**  5.8
-** Tested up to:**  7.1
-** Requires PHP:**  7.4
-** Stable tag:**  1.0.0
-** License:**  GPLv2 or later
-** License URI:**  https://www.gnu.org/licenses/gpl-2.0.html
+**Contributors:**  hedows
+**Tags:**  whatsapp, woocommerce, click to chat, chat button, order
+**Requires at least:**  5.8
+**Tested up to:**  7.1
+**Requires PHP:**  7.4
+**Stable tag:**  1.0.0
+**License:**  GPLv2 or later
+**License URI:**  https://www.gnu.org/licenses/gpl-2.0.html
 
 Add a floating WhatsApp chat button to your site and let WooCommerce customers order, share and check out their cart on WhatsApp.
 
@@ -122,12 +122,10 @@ ChatKart is an independent plugin and is not affiliated with, endorsed by or spo
 </details>
 
 <details>
-<summary><b></b></summary>
+<summary><b>Can I change the number per page?</b></summary>
 <br>
+  Yes. Open any page, post or product and use the ChatKart box in the editor sidebar.
 </details>
-= Can I change the number per page? =
-
-Yes. Open any page, post or product and use the ChatKart box in the editor sidebar.
 
 <details>
 <summary><b>Does it work with caching plugins?</b></summary>
@@ -138,12 +136,12 @@ Yes. Open any page, post or product and use the ChatKart box in the editor sideb
 <details>
 <summary><b>Where is my data stored?</b></summary>
 <br>
-Only the plugin settings and an anonymous click counter are stored. Uninstalling the plugin removes them.
+  Only the plugin settings and an anonymous click counter are stored. Uninstalling the plugin removes them.
 </details>
 
 ## Changelog
 <details>
-<summary><b>1.0.0 </b></summary>
+<summary><b>1.0.0</b></summary>
 <br>
   * First public release.
 </details>
