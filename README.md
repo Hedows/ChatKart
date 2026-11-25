@@ -1,12 +1,12 @@
 # ChatKart – Click to Chat Button & Cart Checkout for WooCommerce
-Contributors: hedows
-Tags: whatsapp, woocommerce, click to chat, chat button, order
-Requires at least: 5.8
-Tested up to: 7.1
-Requires PHP: 7.4
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+** Contributors:**  hedows
+** Tags:**  whatsapp, woocommerce, click to chat, chat button, order
+** Requires at least:**  5.8
+** Tested up to:**  7.1
+** Requires PHP:**  7.4
+** Stable tag:**  1.0.0
+** License:**  GPLv2 or later
+** License URI:**  https://www.gnu.org/licenses/gpl-2.0.html
 
 Add a floating WhatsApp chat button to your site and let WooCommerce customers order, share and check out their cart on WhatsApp.
 
@@ -91,45 +91,66 @@ ChatKart is an independent plugin and is not affiliated with, endorsed by or spo
 4. Optional: open the *WooCommerce* tabs to configure order buttons, messages and popup design.
 
 ## Frequently Asked Questions
+<details>
+<summary><b>Do I need WooCommerce?</b></summary>
+<br>
+  No. The floating chat button, chat popup, shortcode, block and Elementor widget work on any WordPress site. The ordering features appear when WooCommerce is active.
+</details>
 
-= Do I need WooCommerce? =
+<details>
+<summary><b>Do I need the WhatsApp Business API?</b></summary>
+<br>
+  No. ChatKart uses WhatsApp click-to-chat links. It cannot send messages automatically – the customer or you tap "Send" in WhatsApp.
+</details>
 
-No. The floating chat button, chat popup, shortcode, block and Elementor widget work on any WordPress site. The ordering features appear when WooCommerce is active.
+<details>
+<summary><b>Does it create WooCommerce orders?</b></summary>
+<br>
+  The free plugin sends the order details to WhatsApp (and optionally by email). It does not create orders in WooCommerce – that is a ChatKart Pro feature.
+</details>
 
-= Do I need the WhatsApp Business API? =
+<details>
+<summary><b>Is anything locked or limited to a trial?</b></summary>
+<br>
+  No. Every setting you see in this plugin works. Paid features live in a separate plugin.
+</details>
 
-No. ChatKart uses WhatsApp click-to-chat links. It cannot send messages automatically – the customer or you tap "Send" in WhatsApp.
+<details>
+<summary><b>How do I add a button manually?</b></summary>
+<br>
+  Use the shortcode `[chatkart_chat text="Chat with us"]` (optional `phone`, `message`, `icon`, `class`), the ChatKart block in the editor, the Elementor widget, or add a link to `#whatsapp`. For a WooCommerce product order button use `[chatkart_button id="123"]`.
+</details>
 
-= Does it create WooCommerce orders? =
-
-The free plugin sends the order details to WhatsApp (and optionally by email). It does not create orders in WooCommerce – that is a ChatKart Pro feature.
-
-= Is anything locked or limited to a trial? =
-
-No. Every setting you see in this plugin works. Paid features live in a separate plugin.
-
-= How do I add a button manually? =
-
-Use the shortcode `[chatkart_chat text="Chat with us"]` (optional `phone`, `message`, `icon`, `class`), the ChatKart block in the editor, the Elementor widget, or add a link to `#whatsapp`. For a WooCommerce product order button use `[chatkart_button id="123"]`.
-
+<details>
+<summary><b></b></summary>
+<br>
+</details>
 = Can I change the number per page? =
 
 Yes. Open any page, post or product and use the ChatKart box in the editor sidebar.
 
-= Does it work with caching plugins? =
+<details>
+<summary><b>Does it work with caching plugins?</b></summary>
+<br>
+  Yes. Display rules are evaluated in the browser, and the order form requests its security token by AJAX.
+</details>
 
-Yes. Display rules are evaluated in the browser, and the order form requests its security token by AJAX.
-
-= Where is my data stored? =
-
+<details>
+<summary><b>Where is my data stored?</b></summary>
+<br>
 Only the plugin settings and an anonymous click counter are stored. Uninstalling the plugin removes them.
+</details>
 
 ## Changelog
-
-= 1.0.0 =
-* First public release.
+<details>
+<summary><b>1.0.0 </b></summary>
+<br>
+  * First public release.
+</details>
 
 ### Upgrade Notice
-
-= 1.0.0 =
-First public release.
+<details>
+<summary><b>1.0.0</b></summary>
+<br>
+  First public release.
+</details>
